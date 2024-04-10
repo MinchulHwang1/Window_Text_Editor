@@ -1,0 +1,32 @@
+﻿<Window x:Class="WP_A02.AboutModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WP_A02"
+        mc:Ignorable="d"
+        Title="About Section" Height="300" Width="200" ResizeMode="NoResize">
+    
+    <Grid>
+        
+        <RichTextBox Margin="10,10,10,91" TextChanged="RichTextBox_TextChanged" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph>
+                    
+                    <Run Text="- This application is used in order to mimic the functionalities of a working Notepad application 
+                         
+                               - As such, methods for saving text, opening files, exiting the application safely, and
+many more have been developed in order to recreate a functioning replica
+                         
+                         - Current Version: 1.0" FontSize="10" FontStyle="Italic"/>
+                    
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Close" HorizontalAlignment="Center" Height="20"  VerticalAlignment="Bottom" Margin="0,0,0,10" Width="50" FontSize="10" Click="About_Click"/>
+        <Label Content="Created By:" FontSize="9" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,193,0,0" VerticalAlignment="Top" Height="42" Width="180"/>
+        <Label Content="Cody Glanville and Minchul Hwang" FontSize="9" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Height="24" Width="180"/>
+
+    </Grid>
+    
+</Window>
